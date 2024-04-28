@@ -1,0 +1,27 @@
+.grey-color {
+    color: #9a9a9a;
+}
+.svg path {
+    fill: #ffb703;
+}
+.svg {
+    width: 20px;
+
+}
+.svg-primary_orange path {
+    fill: #023047;
+    transition: .5s;
+
+}
+.text-white_svg {
+    width: 90px;
+}
+.text-white_svg path {
+    fill: white;
+}
+.btn-flex:hover .svg-primary_orange path{
+    fill: #ffb703 !important;
+}
+.about-svg {
+    padding-left: 5px;
+}

@@ -1,0 +1,28 @@
+.top-primary_orange:hover {
+    background-color: #023047 !important;
+}
+.top-primary_orange{
+    background-color: #ffb703;
+    transition: .5s;
+
+}
+.svg-top_orange path{
+    fill: #023047 !important;
+    transition: .5s;
+}
+.top-primary_orange:hover .svg-top_orange path {
+    fill: #ffb703 !important;
+}
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+.svg-10 {
+    width: 15px;
+}
+.top{
+    padding:1px 0 2px 0 ;
+    text-align: center;
+}
