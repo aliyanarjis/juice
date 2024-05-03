@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.css'
 // import { useEffect } from "react";
@@ -8,7 +7,6 @@ import Footer from "./component/footer/footer";
 import Top from "./component/back_top/top";
 import Spinner from "./component/spinner/spinner";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,7 +33,7 @@ export default function RootLayout({
       {/* <link href="css/bootstrap.min.css" rel="stylesheet" /> */}
 
       </head>
-      <body className={inter.className}>
+      <body>
         <Nav />
         <Spinner />
         {children}

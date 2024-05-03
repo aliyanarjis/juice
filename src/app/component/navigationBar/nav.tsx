@@ -75,8 +75,8 @@ export default function Nav() {
                             }
                             
                         </div>
-                        <button className="btn-search btn-primary-orange  top-primary_orange visible btn btn-primary_orange btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><svg className='svg search ml-4 svg-top_orange' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
-                        <a href="" className="btn btn-primary_orange visible py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                        <button className="btn-search btn-primary-orange  top-primary_orange visible btn top-primary_orange btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><svg className='svg search ml-4 svg-top_orange' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+                        <a href="" className="btn top-primary_orange visible py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
                     </div>
                 </nav>
             </div>
