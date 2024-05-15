@@ -7,6 +7,15 @@ import Footer from "./component/footer/footer";
 import Top from "./component/back_top/top";
 import Spinner from "./component/spinner/spinner";
 
+// G S A P
+
+import { gsap } from "gsap";    
+import { Flip } from "gsap/Flip";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(Flip,ScrollTrigger);
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,11 +35,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head>
-
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"  />
-        
-      {/* <link href="css/bootstrap.min.css" rel="stylesheet" /> */}
+      <head>     
 
       </head>
       <body>
@@ -45,9 +50,6 @@ export default function RootLayout({
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTriger.min.js"></script>
       </body>
     </html>
   );

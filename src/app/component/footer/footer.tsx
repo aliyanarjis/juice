@@ -1,8 +1,13 @@
+'use client'
 
 import './style.css'
+
 export default function Footer() {
+
+
+  
     return(
-        <div className='footer-section'>
+        <div  className='footer-section'>
             <div className="container-fluid footer py-6 my-6 mb-0   wow bounceInUp" data-wow-delay="0.1s">
             <div className="container">
                 <div className="row">

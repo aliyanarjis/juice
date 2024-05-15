@@ -1,6 +1,35 @@
+'use client'
+import { useRef } from "react";
+import gsap from "gsap";
+gsap.registerPlugin(useGSAP);
+import { useGSAP } from "@gsap/react";
+
 export default function Hero() {
+    const container = useRef();
+
+  useGSAP(() => {
+    
+    gsap.from(".align-items-center", {
+        y: 20,
+        //   scale: 0.2,
+        opacity: 0,
+        duration:1,
+        yoyo: true
+    });
+    gsap.to(".align-items-center", {
+        y: 0,
+        //   scale: 0.2,
+        opacity: 1,
+        duration: 1,
+        yoyo: true
+    });
+  
+
+   }, {scope: container}); 
+
+
     return(
-        <div className="container-fluid   py-6 my-6 mt-0">
+        <div ref={container} className="container-fluid   py-6 my-6 mt-0">
         <div className="container">
             <div className="row g-5 align-items-center">
                 <div className="col-lg-7 col-md-12">

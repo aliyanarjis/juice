@@ -5,7 +5,45 @@ import './style.css'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+// gsap animation
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
+
+
 export default function Nav() {
+    const container = useRef();
+
+  useGSAP(() => {
+    gsap.to(".logo-taju", {
+      rotation: 360,
+    //   repeat: -1,
+    //   repeatDelay: 1,
+      yoyo: true,
+      duration:1
+    });
+    gsap.from(".navbar-nav", {
+        y: 20,
+        //   scale: 0.2,
+        opacity: 0,
+        duration:1,
+        yoyo: true
+    });
+    gsap.to(".navbar-nav", {
+        y: 0,
+        //   scale: 0.2,
+        opacity: 1,
+        duration: 1,
+        yoyo: true
+    });
+  
+
+   }, {scope: container}); 
+
+
+
+
     // const router_ = useRouter()
     const pathName = usePathname()
     const NavData = [
@@ -18,7 +56,7 @@ export default function Nav() {
             name: 'About',
         },
         {
-            slug:'/service',
+            slug:'/services',
             name: 'Service',
         },
         {
@@ -41,9 +79,9 @@ export default function Nav() {
         },
     ]
     return(
-        <div className="container-fluid nav-bar">
+        <div ref={container} className="container-fluid nav-bar">
             <div className="container">
-                <nav className="navbar navbar-light navbar-expand-lg py-4">
+                <nav  id='nav-come' className="navbar navbar-light navbar-expand-lg py-4">
                     <a href="/" className="navbar-brand">
                         <h1 className="text-primary_orange   fw-bold mb-0"><span className="text-dark">
                             <img className="logo-taju" src="./image/logo.png" />

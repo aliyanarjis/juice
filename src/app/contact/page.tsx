@@ -1,5 +1,10 @@
+'use client'
 import './style.css'
 export default function Contact() {
+
+   
+  
+    
     return(
         <div className="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
         <div className="container">
@@ -15,7 +20,7 @@ export default function Contact() {
                             <input type="text" className="w-100 form-control p-3 mb-4 border-primary_orange bg-light_peach" placeholder="Your Name"/>
                             <input type="email" className="w-100 form-control p-3 mb-4 border-primary_orange bg-light_peach" placeholder="Enter Your Email"/>
                             <textarea className="w-100 form-control mb-4 p-3 border-primary_orange bg-light_peach" rows={4} cols={10} placeholder="Your Message"></textarea>
-                            <button className="w-100 btn btn-primary_orange form-control p-3 border-primary_orange bg-primary_orange rounded-pill" type="submit">Submit Now</button>
+                            <button className="w-100 btn top-primary_orange form-control p-3 border-primary_orange bg-primary_orange rounded-pill" type="submit">Submit Now</button>
                         </form>
                     </div>
                     <div className="col-md-6 col-lg-5">
